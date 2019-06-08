@@ -1,0 +1,12 @@
+@import "../../../variables.scss";
+@import "../../../customBootstrap.scss";
+
+@import "./../../../../node_modules/bootstrap/scss/_alert.scss";
+
+.alert {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  top: 80%;
+}

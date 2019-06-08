@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+@import "../../../customBootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/_modal.scss";
+@import "./node_modules/bootstrap/scss/_buttons.scss";
+@import "./node_modules/bootstrap/scss/_close.scss";
+
+
+.alert {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  bottom: 10px;
+}
