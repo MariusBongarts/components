@@ -1,0 +1,3 @@
+[submodule "marius-card"]
+	path = marius-card
+	url = https://github.com/marius2502/marius-card.git
