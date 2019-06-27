@@ -1,6 +1,6 @@
-[submodule "marius-card"]
-	path = marius-card
-	url = https://github.com/marius2502/marius-card.git
+[submodule "marius-button"]
+	path = marius-button
+	url = https://github.com/marius2502/marius-button.git
 [submodule "angular-webComponents-starter"]
 	path = angular-webComponents-starter
 	url = https://github.com/marius2502/angular-webComponents-starter.git
