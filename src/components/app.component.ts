@@ -88,8 +88,8 @@ class AppComponent extends LitElement {
     this.clubLogoUrl = this.clubLogoUrlElement.value;
     this.nationLogoUrl = this.nationLogoUrlElement.value;
     this.position = this.positionElement.value;
-    this.sm = Number(this.smElement.value);
-    this.wf = Number(this.wfElement.value);
+    Number(this.smElement.value) < 6 ? this.sm = Number(this.smElement.value) : this.smElement.value = '0';
+    Number(this.wfElement.value) < 6 ? this.wf = Number(this.wfElement.value) : this.wfElement.value = '0';
   }
 
   resizeInputs(e: HTMLInputElement) {
@@ -149,9 +149,11 @@ class AppComponent extends LitElement {
           <span class="attribute"> position=<span class="attributeName">"</span><input type="text" max="99" class="codeInput"
               placeholder="position" id="position" name="position" value=${this.position}><span class="attributeName">"</span></span>
           </span>
+          <br>
           <span class="attribute"> sm=<span class="attributeName">"</span><input type="text" maxlength="1" class="codeInput"
               placeholder="sm" id="sm" name="sm" value=${this.sm}><span class="attributeName">"</span></span>
           </span>
+          <br>
           <span class="attribute"> wf=<span class="attributeName">"</span><input type="text" maxlengt="1" class="codeInput"
               placeholder="wf" id="wf" name="wf" value=${this.wf}><span class="attributeName">"</span></span>
           </span>
