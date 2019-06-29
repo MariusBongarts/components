@@ -149,10 +149,10 @@ class AppComponent extends LitElement {
           <span class="attribute"> position=<span class="attributeName">"</span><input type="text" max="99" class="codeInput"
               placeholder="position" id="position" name="position" value=${this.position}><span class="attributeName">"</span></span>
           </span>
-          <span class="attribute"> sm=<span class="attributeName">"</span><input type="text" max="1" class="codeInput"
+          <span class="attribute"> sm=<span class="attributeName">"</span><input type="text" maxlength="1" class="codeInput"
               placeholder="sm" id="sm" name="sm" value=${this.sm}><span class="attributeName">"</span></span>
           </span>
-          <span class="attribute"> wf=<span class="attributeName">"</span><input type="text" max="1" class="codeInput"
+          <span class="attribute"> wf=<span class="attributeName">"</span><input type="text" maxlengt="1" class="codeInput"
               placeholder="wf" id="wf" name="wf" value=${this.wf}><span class="attributeName">"</span></span>
           </span>
           <br>
@@ -161,7 +161,7 @@ class AppComponent extends LitElement {
         <div class="col-12 col-lg-6 align-self-center">
           <marius-fifa-card playerName=${this.playerName} pac=${this.pac} sho=${this.sho} pas=${this.pas} dri=${this.dri}
             def=${this.def} phy=${this.phy} overall=${this.overall} position=${this.position} playerImgUrl=${this.playerImgUrl}
-            nationLogoUrl=${this.nationLogoUrl} clubLogoUrl=${this.clubLogoUrl}>
+            nationLogoUrl=${this.nationLogoUrl} clubLogoUrl=${this.clubLogoUrl} sm=${this.sm} wf=${this.wf}>
           </marius-fifa-card>
         </div>
       </div>
