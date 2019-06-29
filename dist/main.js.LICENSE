@@ -1002,6 +1002,13 @@
  * @ExportDecoratedItems
  */
 
+/**
+ * A property decorator that converts a class property into a getter
+ * that executes a querySelectorAll on the element's renderRoot.
+ *
+ * @ExportDecoratedItems
+ */
+
 // Note, this is a getter so that it's lazy. In practice, this means
 
 // stylesheets are not created until the first element instance is made.

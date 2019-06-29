@@ -7,6 +7,15 @@
   word-wrap: break-word;
 }
 
+.codeInput {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  color: #d7ba7d !important;
+  background-color: #1d1d1d;
+  max-width: 200px;
+}
 
 .tag {
   color: #569cd6;
@@ -22,7 +31,7 @@
 }
 
 .comment {
-  color: #6A9955;
+  color: #6a9955;
 }
 
 a {
