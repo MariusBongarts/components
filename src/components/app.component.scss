@@ -1,49 +1,6 @@
 @import "../customBootstrap.scss";
 
-.componentInfo {
-  background-color: #1d1d1d;
-  border-radius: 15px;
-  padding: 20px 45px;
-  word-wrap: break-word;
-}
-
-.codeInput {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  padding: none;
-  color: #d7ba7d !important;
-  background-color: #1d1d1d;
-  max-width: 200px;
-}
-
-.tag {
-  color: #569cd6;
-}
-
-.attribute {
-  color: #9cdcfe;
-  padding-left: 40px;
-}
-
-.attributeName {
-  color: #d7ba7d !important;
-}
-
-.comment {
-  color: #6a9955;
-}
-
-a {
-  cursor: pointer;
-}
-
-.secondNavbar{
-  --skew-degree-x: 0deg;
-  --skew-degree-y: 0deg;
-}
-
-.thirdNavbar{
-  --skew-degree-x: 0deg;
-  --skew-degree-y: 0deg;
+marius-navbar {
+    --skew-degree-x: 0deg;
+    --skew-degree-y: 0deg;
 }

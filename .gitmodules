@@ -8,3 +8,6 @@
 [submodule "marius-navbar"]
 	path = marius-navbar
 	url = https://github.com/marius2502/marius-navbar.git
+[submodule "marius-left-navbar"]
+	path = marius-left-navbar
+	url = https://github.com/marius2502/marius-left-navbar.git
