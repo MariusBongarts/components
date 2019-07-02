@@ -9,7 +9,7 @@ class AppComponent extends LitElement {
   static styles = css`${unsafeCSS(componentCSS)}`;
 
   @property()
-  navItems = ['marius-button', 'marius-navbar', 'marius-fifa-card'];
+  navItems = ['marius-button', 'marius-navbar', 'marius-left-navbar', 'marius-fifa-card'];
 
   @property()
   selectedItem: string | any;
@@ -20,7 +20,7 @@ class AppComponent extends LitElement {
   firstUpdated() {
     window.addEventListener('scroll', () => {
       this.sectionElements.forEach(e => {
-        e.offsetTop < document.documentElement.scrollTop ? this.selectedItem = e.getAttribute('id') : '';
+        (e.offsetTop - 200) < document.documentElement.scrollTop ? this.selectedItem = e.getAttribute('id') : '';
       });
     });
 
@@ -45,9 +45,15 @@ class AppComponent extends LitElement {
             <navbar-overview></navbar-overview>
           </section>
 
+          <section id='marius-left-navbar'>
+            <left-navbar-overview></left-navbar-overview>
+          </section>
+
           <section id='marius-fifa-card'>
             <fifa-card-overview></fifa-card-overview>
           </section>
+
+
 
         </div>
       </div>
