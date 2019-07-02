@@ -1,5 +1,6 @@
 import './index.scss';
 import './components/app.component.ts';
+import './components/overview/button-overview/button-overview.component';
 import './components/overview/navbar-overview/navbar-overview.component';
 import './components/overview/fifa-card-overview/fifa-card-overview.component';
 

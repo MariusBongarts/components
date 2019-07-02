@@ -9,7 +9,7 @@ class AppComponent extends LitElement {
   static styles = css`${unsafeCSS(componentCSS)}`;
 
   @property()
-  navItems = ['marius-navbar', 'marius-fifa-card'];
+  navItems = ['marius-button', 'marius-navbar', 'marius-fifa-card'];
 
   @property()
   selectedItem: string | any;
@@ -22,7 +22,7 @@ class AppComponent extends LitElement {
       this.sectionElements.forEach(e => {
         e.offsetTop < document.documentElement.scrollTop ? this.selectedItem = e.getAttribute('id') : '';
       });
-    })
+    });
 
   }
 
@@ -36,6 +36,10 @@ class AppComponent extends LitElement {
           </marius-left-navbar>
         </div>
         <div class="col-12 col-lg-10 p-5">
+
+          <section id='marius-button'>
+            <button-overview></button-overview>
+          </section>
 
           <section id='marius-navbar'>
             <navbar-overview></navbar-overview>
