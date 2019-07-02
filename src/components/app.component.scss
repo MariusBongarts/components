@@ -1,5 +1,9 @@
 @import "../customBootstrap.scss";
 
+marius-left-navbar {
+    --position: fixed;
+}
+
 marius-navbar {
     --skew-degree-x: 0deg;
     --skew-degree-y: 0deg;
