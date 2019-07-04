@@ -24,7 +24,13 @@ class AppComponent extends LitElement {
           <span class="tag">&lt/marius-button/></span>
         </div>
         <div class="col-12 col-lg-6 align-self-center" style="left: 20%">
-          <marius-button class="align-self-center"></marius-button>
+          <div>
+            <marius-button></marius-button>
+          </div>
+
+          <div class="mt-2">
+            <marius-button></marius-button>
+          </div>
         </div>
       </div>
 
