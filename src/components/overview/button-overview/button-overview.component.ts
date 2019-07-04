@@ -13,7 +13,7 @@ class AppComponent extends LitElement {
       <!-- marius-navbar -->
       <div class="row my-2 pt-5 d-flex justify-content-center">
         <div class="col-12 col-lg-6 componentInfo">
-          <span class="comment">&lt!-- See it on <a class="comment" target="_blank" href="https://github.com/marius2502/marius-navbar"
+          <span class="comment">&lt!-- See it on <a class="comment" target="_blank" href="https://github.com/marius2502/marius-button"
               class="attributeName">Github</a> --></span>
           <br>
           <span class="tag">&ltmarius-button</span>
@@ -25,11 +25,11 @@ class AppComponent extends LitElement {
         </div>
         <div class="col-12 col-lg-6 align-self-center" style="left: 20%">
           <div>
-            <marius-button></marius-button>
+            <marius-button>Click me</marius-button>
           </div>
 
           <div class="mt-2">
-            <marius-button></marius-button>
+            <marius-button content='Click me'></marius-button>
           </div>
         </div>
       </div>
