@@ -23,7 +23,7 @@ class AppComponent extends LitElement {
           <br>
           <span class="tag">&lt/marius-left-navbar/></span>
         </div>
-        <div class="col-12 col-lg-6 align-self-center py-5" style="left: 20%">
+        <div class="col-6 col-lg-6 d-flex justify-content-center">
         <marius-left-navbar style="--position: relative"></marius-left-navbar>
         </div>
       </div>

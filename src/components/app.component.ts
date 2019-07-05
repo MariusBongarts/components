@@ -24,35 +24,40 @@ class AppComponent extends LitElement {
 
         // If scrolled to bottom
         if (document.documentElement.scrollTop === (document.documentElement.offsetHeight - window.innerHeight)) {
-        this.selectedItem = this.navItems[this.navItems.length - 1];
-      }
+          this.selectedItem = this.navItems[this.navItems.length - 1];
+        }
+      });
     });
-  });
-}
+  }
 
-scrollToSection(item: string) {
-  let sectionElement!: HTMLElement;
-  this.sectionElements.forEach(e => {
-    if (e.getAttribute('id') === item) sectionElement = e;
-  });
-  window.scrollTo(0, sectionElement.offsetTop);
-}
+  scrollToSection(item: string) {
+    let sectionElement!: HTMLElement;
+    this.sectionElements.forEach(e => {
+      if (e.getAttribute('id') === item) sectionElement = e;
+    });
+    window.scrollTo(0, sectionElement.offsetTop);
+  }
 
-render() {
-  return html`
+  render() {
+    return html`
     <div class="container-fluid">
       <div class="row">
         <div class="d-none d-lg-block col-2 p-0 m-0">
-          <marius-left-navbar .navItems=${this.navItems} selectedItem=${this.selectedItem} @clicked=${(e: CustomEvent) =>
-      this.scrollToSection(e.detail)}
+          <marius-left-navbar .navItems=${this.navItems} selectedItem=${this.selectedItem} @clicked=${(e: CustomEvent)=>
+              this.scrollToSection(e.detail)}
             >
           </marius-left-navbar>
         </div>
         <div class="col-12 col-lg-10 p-5">
 
-          <section id='marius-button'>
-            <button-overview></button-overview>
-          </section>
+          <div class="row">
+            <div class="col-12">
+              <section id='marius-button'>
+                <button-overview></button-overview>
+              </section>
+            </div>
+          </div>
+
 
           <section id='marius-navbar'>
             <navbar-overview></navbar-overview>
@@ -72,6 +77,6 @@ render() {
 
     </div>
 `;
-}
+  }
 
 }
