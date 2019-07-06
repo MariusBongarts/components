@@ -1,2 +1,10 @@
-@import "../../../customBootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 @import "../../../codeStyle.scss";
+
+
+.green {
+  --app-primary-color: rgb(108, 243, 30);
+  --app-primary-color-hover: rgb(99, 221, 29);
+  --app-primary-color-shadow: rgba(108, 243, 30, 0.308);
+  --app-secondary-color: #838383;
+}

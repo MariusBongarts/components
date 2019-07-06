@@ -110,7 +110,7 @@ class AppComponent extends LitElement {
   render() {
     return html`
     <!-- marius-fifa-card -->
-    <div class="row my-2 pt-5 d-flex justify-content-center">
+    <div class="row my-2 pt-5">
       <div class="col-12 col-lg-6  componentInfo">
         <span class="comment">&lt!-- See it on <a class="comment" target="_blank" href="https://github.com/marius2502/marius-fifa-card"
             class="attributeName">Github</a> --></span>

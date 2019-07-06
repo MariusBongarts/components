@@ -40,7 +40,7 @@ class AppComponent extends LitElement {
 
   render() {
     return html`
-    <div class="container-fluid">
+    <div class="container-fluid w-100">
       <div class="row">
         <div class="d-none d-lg-block col-2 p-0 m-0">
           <marius-left-navbar .navItems=${this.navItems} selectedItem=${this.selectedItem} @clicked=${(e: CustomEvent)=>
@@ -48,15 +48,12 @@ class AppComponent extends LitElement {
             >
           </marius-left-navbar>
         </div>
-        <div class="col-12 col-lg-10 p-5">
+        <div class="col-12 col-lg-10 p-lg-5">
 
-          <div class="row">
-            <div class="col-12">
-              <section id='marius-button'>
-                <button-overview></button-overview>
-              </section>
-            </div>
-          </div>
+
+          <section id='marius-button'>
+            <button-overview></button-overview>
+          </section>
 
 
           <section id='marius-navbar'>

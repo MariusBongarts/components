@@ -33,7 +33,7 @@ class AppComponent extends LitElement {
   render() {
     return html`
       <!-- marius-navbar -->
-      <div class="row my-2 pt-5 d-flex justify-content-center">
+      <div class="row my-2 pt-5">
         <div class="col-12 col-lg-6 componentInfo">
           <span class="comment">&lt!-- See it on <a class="comment" target="_blank" href="https://github.com/marius2502/marius-navbar"
               class="attributeName">Github</a> --></span>
@@ -45,13 +45,15 @@ class AppComponent extends LitElement {
           <br>
           <span class="tag">&lt/marius-navbar/></span>
         </div>
-        <div class="col-6 col-lg-6 d-flex justify-content-center">
-          <marius-navbar class="align-self-center"></marius-navbar>
+        <div class="col-12 col-lg-6">
+          <div class="row d-flex justify-content-center">
+            <marius-navbar class="align-self-center"></marius-navbar>
+          </div>
         </div>
       </div>
 
       <!-- marius-navbar adjusted css -->
-      <div class="row my-2 pt-5 d-flex justify-content-center">
+      <div class="row my-2 pt-5">
         <div class="col-12 col-lg-6 componentInfo">
           <span class="comment">&lt!-- See it on <a class="comment" target="_blank" href="https://github.com/marius2502/marius-navbar"
               class="attributeName">Github</a> --></span>
@@ -64,9 +66,11 @@ class AppComponent extends LitElement {
           <br>
           <span class="tag">&lt/marius-navbar/></span>
         </div>
-        <div class="col-6 col-lg-6 d-flex justify-content-center">
-          <marius-navbar selectedIcon=${this.iconName} @selected=${(e: CustomEvent) => this.iconName = e.detail}
-            class="align-self-center secondNavbar"></marius-navbar>
+        <div class="col-12 col-lg-6">
+          <div class="row d-flex justify-content-center">
+            <marius-navbar selectedIcon=${this.iconName} @selected=${(e: CustomEvent)=> this.iconName = e.detail}
+              class="align-self-center secondNavbar"></marius-navbar>
+          </div>
         </div>
       </div>
 
@@ -83,9 +87,12 @@ class AppComponent extends LitElement {
           <br>
           <span class="tag">&lt/marius-navbar/></span>
         </div>
-        <div class="col-6 col-lg-6 d-flex justify-content-center">
-          <marius-navbar class="align-self-center thirdNavbar"></marius-navbar>
+        <div class="col-12 col-lg-6">
+          <div class="row d-flex justify-content-center">
+            <marius-navbar class="align-self-center thirdNavbar"></marius-navbar>
+          </div>
         </div>
+
       </div>
 `;
   }
