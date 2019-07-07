@@ -49,7 +49,7 @@ class AppComponent extends LitElement {
             >
           </marius-left-navbar>
         </div>
-        <div class="col-12 col-lg-10 p-lg-5">
+        <div class="col-12 col-lg-10 py-5 p-lg-5">
 
 
           <section id='marius-button'>
