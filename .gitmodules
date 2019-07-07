@@ -11,3 +11,6 @@
 [submodule "marius-left-navbar"]
 	path = marius-left-navbar
 	url = https://github.com/marius2502/marius-left-navbar.git
+[submodule "marius-top-navbar"]
+	path = marius-top-navbar
+	url = https://github.com/marius2502/marius-top-navbar.git
