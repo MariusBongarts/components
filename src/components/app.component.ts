@@ -44,7 +44,7 @@ class AppComponent extends LitElement {
       <marius-top-navbar></marius-top-navbar>
       <div class="row">
         <div class="d-none d-lg-block col-2 p-0 m-0">
-          <marius-left-navbar .navItems=${this.navItems} selectedItem=${this.selectedItem} @clicked=${(e: CustomEvent)=>
+          <marius-left-navbar .navItems=${this.navItems} selectedItem=${this.selectedItem} @clicked=${(e: CustomEvent) =>
               this.scrollToSection(e.detail)}
             >
           </marius-left-navbar>

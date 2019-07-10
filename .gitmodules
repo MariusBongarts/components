@@ -14,3 +14,4 @@
 [submodule "marius-top-navbar"]
 	path = marius-top-navbar
 	url = https://github.com/marius2502/marius-top-navbar.git
+[submodule "marius-svg-logo"]

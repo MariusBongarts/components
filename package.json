@@ -1,7 +1,7 @@
 {
   "name": "@marius/overview",
   "version": "1.0.0",
-  "description": "task manager",
+  "description": "Web components overview",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@lrnwebcomponents/paper-avatar": "^2.0.8",
     "@types/jasmine": "^3.3.12",
     "@types/node": "^11.11.3",
     "@types/selenium-webdriver": "^4.0.0",
-    "@vaadin/vaadin-select": "^2.0.4",
-    "@vaadin/vaadin-text-field": "^2.3.5",
     "@webcomponents/webcomponentsjs": "^2.2.10",
     "bootstrap": "^4.3.1",
     "clean-webpack-plugin": "^2.0.1",
